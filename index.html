@@ -12,24 +12,27 @@
             height: 100%;
         }
     </style>
-    <script src="video_player.js"></script>
     <script type="text/javascript">
+        // Branch arthur-30-08
+        
+        var vid = document.getElementById("vid");
+
         var urls = [
             "http://granbery.edu.br"
-            //, "http://4alltests.com.br"
+            , "http://4alltests.com.br"
             //, "https://nvoiptest.000webhostapp.com/"
             //, "http://scratchpads.org/explore/sites-list"
-            , "https://www.youtube.com/embed/l-aS0XSmShM?autoplay=1&mute=1"
+            , "video.mp4"
             //, "https://www.youtube.com/embed/Sn9lWDbPlj8?autoplay=1"
         ];
 
         var timeArray = [
-            2000
+            1000
+            ,2000
             //,3000
             //,4000
-            //,1000
-            , 5850
-            //,60000
+            , 5400
+            //, 60000
         ];
 
         function showUrl(idx, i = 0) {
@@ -53,7 +56,6 @@
         }
     </script>
 </head>
-
 <body bgcolor="gray" onload="showUrl(0)" class="app-chrome">
     <iframe id="frameUrl" src="about:blank"></iframe>
 </body>
