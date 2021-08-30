@@ -17,21 +17,21 @@
         // Branch arthur-30-08
 
         var urls = [
-            "http://granbery.edu.br"
-            //, "http://4alltests.com.br"
-            //, "https://nvoiptest.000webhostapp.com/"
-            //, "http://scratchpads.org/explore/sites-list"
-            , "https://www.youtube.com/embed/l-aS0XSmShM?autoplay=1&mute=1"
-            //, "https://www.youtube.com/embed/Sn9lWDbPlj8?autoplay=1"
+            "http://granbery.edu.br" // //primeira URL
+            , "http://4alltests.com.br" //segunda URL
+            , "https://nvoiptest.000webhostapp.com/" //terceira URL
+            , "http://scratchpads.org/explore/sites-list" //quarta URL
+            , "https://www.youtube.com/embed/l-aS0XSmShM?autoplay=1&mute=1" //quinta URL
+            , "https://www.youtube.com/embed/Sn9lWDbPlj8?start=1&autoplay=1" //sexta  URL
         ];
 
         var timeArray = [
-            2000
-            //,3000
-            //,4000
-            //,1000
-            , 5850
-            //,60000
+            2000 //primeira URL
+            ,3000 //segunda URL
+            ,4000 //terceira URL
+            ,1000 //quarta URL
+            , 5700 //quintaURL
+            ,59000 //sexta URL
         ];
 
         function showUrl(idx, i = 0) {
@@ -57,7 +57,7 @@
 </head>
 
 <body bgcolor="gray" onload="showUrl(0)" class="app-chrome">
-    <iframe id="frameUrl" src="about:blank"></iframe>
+    <iframe id="frameUrl" src="about:blank" allow="autoplay;"></iframe>
 </body>
 
-</html>
+</html> 
