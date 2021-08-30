@@ -14,23 +14,25 @@
     </style>
     <script type="text/javascript">
         // Branch arthur-30-08
+        
+        var vid = document.getElementById("vid");
 
         var urls = [
-            "http://granbery.edu.br"   //primeira URL
-            //, "http://4alltests.com.br"   //segunda URL
-            //, "https://nvoiptest.000webhostapp.com/"     //terceira URL 
-            //, "http://scratchpads.org/explore/sites-list"     //Quarta URL
-            , "http://www.youtube.com/embed/l-aS0XSmShM?autoplay=1&mute=1"      //quinta URL
-            //, "http://www.youtube.com/embed/Sn9lWDbPlj8?autoplay=1"       //sexta URL
+            "http://granbery.edu.br"
+            , "http://4alltests.com.br"
+            //, "https://nvoiptest.000webhostapp.com/"
+            //, "http://scratchpads.org/explore/sites-list"
+            , "video.mp4"
+            //, "https://www.youtube.com/embed/Sn9lWDbPlj8?autoplay=1"
         ];
 
         var timeArray = [
-            2000 //primeira URL
-            ,3000 //segunda URL
-            ,4000 //terceira URL
-            ,1000 //quarta URL
-            , 5700 //quintaURL
-            ,59000 //sexta URL
+            1000
+            ,2000
+            //,3000
+            //,4000
+            , 5400
+            //, 60000
         ];
 
         function showUrl(idx, i = 0) {
@@ -54,7 +56,6 @@
         }
     </script>
 </head>
-
 <body bgcolor="gray" onload="showUrl(0)" class="app-chrome">
     <iframe id="frameUrl" src="about:blank" allow="autoplay;"></iframe>
 </body>
