@@ -5,11 +5,13 @@
     <style type="text/css">
         body {
             margin: 0;
+            overflow: hidden;
         }
 
         #frameUrl {
             width: 100%;
             height: 100%;
+            overflow: hidden;
         }
     </style>
     <script type="text/javascript">
@@ -18,27 +20,28 @@
         var vid = document.getElementById("vid");
 
         var urls = [
-            "http://granbery.edu.br" // Arquivo primeira URL
-            , "http://4alltests.com.br" // Arquivo segunda URL
-            , "https://nvoiptest.000webhostapp.com/" // Arquivo terceira URL
-            , "http://scratchpads.org/explore/sites-list" // Arquivoquarta URL
-            , "video.mp4" // Arquivo quinta URL
+            "https://www.nvoip.com.br/" // Arquivo primeira URL
+            , "https://www.nvoip.com.br/api/" // Arquivo segunda URL
+            , "https://www.nvoip.com.br/contato/" // Arquivo terceira URL
+            , "https://www.nvoip.com.br/sobre-nos/" // Arquivo quarta URL
+            //, "video.mp4" // Arquivo quinta URL
             , "https://www.youtube.com/embed/Sn9lWDbPlj8?autoplay=1" // Arquivo sexta URL
         ];
 
         var timeArray = [
-            1000 //Tempo primeira URL
-            ,2000 //Tempo segunda URL
-            ,3000  //Tempo terceira URL
+            4000 //Tempo primeira URL
+            ,4000 //Tempo segunda URL
+            ,4000  //Tempo terceira URL
             ,4000 //Tempo quarta URL
-            , 5400 //Tempo quintaURL
+            //, 5400 //Tempo quinta URL
             , 60000 //Tempo sexta URL
         ];
 
         function showUrl(idx, i = 0) {
 
             var f = document.getElementById("frameUrl");
-
+            
+            // Lógica troca de telas
             f.onload = function () {
                 var next = ++idx % urls.length;
                 if (i >= urls.length - 1) {
